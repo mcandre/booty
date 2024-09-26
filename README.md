@@ -113,8 +113,8 @@ Compared to modern task runners, the `npm run` system has some quirks:
 
 ## Why not _____?
 
-* Grunt is largely unmaintained.
-* Gulp is terrible at CLI tasks.
+* Grunt is largely unmaintained, and increases the attack surface.
+* Gulp is terrible at CLI tasks, and increases the attack surface.
 * Make isn't JavaScript.
 
 # REQUIREMENTS
