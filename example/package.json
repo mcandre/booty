@@ -1,7 +1,7 @@
 {
     "name": "@mcandre/hello-booty",
     "scripts": {
-        "errands": "./tasks/errands",
+        "all": "./tasks/all",
         "groceries": "./tasks/groceries",
         "clean": "./tasks/clean"
     },

@@ -10,9 +10,11 @@ booty is a convention for writing development tasks for JavaScript (Node.js) pro
 
 # ABOUT
 
-Tasks are implemented using modern JavaScript code.
+Tasks are implemented using modern JavaScript code. We can use a directory like `tasks/` to house task definitions.
 
 ## tasks/groceries
+
+Here, a `groceries` task
 
 ```js
 #!/usr/bin/env node
@@ -22,9 +24,9 @@ import child_process from 'node:child_process';
 import process from 'node:process';
 
 export default function groceries() {
-    child_process.execSync('echo apples', { stdio: 'inherit' });
-    child_process.execSync('echo bananas', { stdio: 'inherit' });
-    child_process.execSync('echo carrots', { stdio: 'inherit' });
+    child_process.execSync('echo milk...', { stdio: 'inherit' });
+    child_process.execSync('echo eggs...', { stdio: 'inherit' });
+    child_process.execSync('echo just browsing', { stdio: 'inherit' });
 }
 
 function main() {
@@ -36,9 +38,36 @@ if (import.meta.url === `file://${process.argv[1]}`) { main(); }
 
 Take care to avoid colliding with [conventional](https://docs.npmjs.com/cli/v10/using-npm/scripts) NPM life cycle task names.
 
+# tasks/clean
+
+It's often a good idea to configure a `clean` task to automate resetting the development environment.
+
+```js
+#!/usr/bin/env node
+'use strict';
+
+import fs from 'node:fs';
+import process from 'node:process';
+
+export default function clean() {
+    console.log('removing junk files...');
+
+    fs.rmSync('nosuchdirectory', { force: true, recursive: true });
+    fs.rmSync('nosuchfile.dat', { force: true });
+}
+
+function main() {
+    clean();
+}
+
+if (import.meta.url === `file://${process.argv[1]}`) { main(); }
+```
+
+## tasks/all
+
 Subtasks can be aggregated together into higher level tasks.
 
-## tasks/errands
+Let's prepare `all` our errands to trigger together.
 
 ```js
 #!/usr/bin/env node
@@ -67,13 +96,20 @@ Then, wire up each task to the `npm run` system.
 {
     "name": "@mcandre/hello-booty",
     "scripts": {
-        "errands": "./tasks/errands",
+        "all": "./tasks/all",
         "groceries": "./tasks/groceries",
         "clean": "./tasks/clean"
     },
     "type": "module"
 }
 ```
+
+# NOTES
+
+Compared to modern task runners, the `npm run` system has some quirks:
+
+* `npm run` accepts only one task name at a time. To trigger multiple tasks, either submit separate `npm run <task a>`, `npm run <task b>` commands, or create an aggregate task that invokes the subtasks.
+* `npm run` has no concept of a default task. We can adopt the convention `npm run all`, in reverence to traditional makefiles.
 
 ## Why not _____?
 

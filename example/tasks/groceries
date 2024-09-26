@@ -5,9 +5,9 @@ import child_process from 'node:child_process';
 import process from 'node:process';
 
 export default function groceries() {
-    child_process.execSync('echo apples', { stdio: 'inherit' });
-    child_process.execSync('echo bananas', { stdio: 'inherit' });
-    child_process.execSync('echo carrots', { stdio: 'inherit' });
+    child_process.execSync('echo milk...', { stdio: 'inherit' });
+    child_process.execSync('echo eggs...', { stdio: 'inherit' });
+    child_process.execSync('echo just browsing', { stdio: 'inherit' });
 }
 
 function main() {
