@@ -134,6 +134,7 @@ Compared to modern task runners, the `npm run` system has some quirks:
 * [Mage](https://magefile.org/), a task runner for Go projects
 * [mian](https://github.com/mcandre/mian), a task runner for (Chicken) Scheme Lisp
 * [npm](https://www.npmjs.com/), [Grunt](https://gruntjs.com/), Node.js task runners
+* [periscope](https://github.com/mcandre/periscope), a linter for unscoped NPM packages
 * [POSIX make](https://pubs.opengroup.org/onlinepubs/009695299/utilities/make.html), a task runner standard for C/C++ and various other software projects
 * [Rake](https://ruby.github.io/rake/), a task runner for Ruby projects
 * [Rebar3](https://www.rebar3.org/), a build system for Erlang projects
