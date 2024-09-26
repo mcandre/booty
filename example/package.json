@@ -1,0 +1,9 @@
+{
+    "name": "@mcandre/hello-booty",
+    "scripts": {
+        "errands": "./tasks/errands",
+        "groceries": "./tasks/groceries",
+        "clean": "./tasks/clean"
+    },
+    "type": "module"
+}

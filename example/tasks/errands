@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+'use strict';
+
+import groceries from './groceries';
+import clean from './clean';
+
+import process from 'node:process';
+
+function main() {
+    groceries();
+    clean();
+}
+
+if (import.meta.url === `file://${process.argv[1]}`) { main(); }
