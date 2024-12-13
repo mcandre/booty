@@ -38,7 +38,7 @@ if (import.meta.url === `file://${process.argv[1]}`) { main(); }
 
 Take care to avoid colliding with [conventional](https://docs.npmjs.com/cli/v10/using-npm/scripts) NPM life cycle task names.
 
-# tasks/clean
+## tasks/clean
 
 It's often a good idea to configure a `clean` task to automate resetting the development environment.
 
