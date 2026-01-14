@@ -1,5 +1,7 @@
 # booty: the biggest thing to happen to ECMAScript since Netscape
 
+[![license](https://img.shields.io/badge/license-BSD-3)](LICENSE.md)
+
 # SUMMARY
 
 booty is a convention for writing development tasks for JavaScript (Node.js) projects, via [npm run](https://docs.npmjs.com/cli/v10/using-npm/scripts) hooks.
