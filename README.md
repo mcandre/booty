@@ -123,30 +123,23 @@ Compared to modern task runners, the `npm run` system has some quirks:
 
 * [Node.js](https://nodejs.org/en/) 20+
 
-# SEE ALSO
+# RESOURCES
 
-* Inspiration from [nobuild](https://github.com/tsoding/nobuild), a convention for C/C++ build systems
-* [bashate](https://github.com/openstack/bashate), a shell script style linter
-* [bb](https://github.com/mcandre/bb), a build system for (g)awk projects
-* [Gradle](https://gradle.org/), a build system for JVM projects
-* [jelly](https://github.com/mcandre/jelly), a JSON task runner
-* [lake](https://luarocks.org/modules/steved/lake), a Lua task runner
-* [Leiningen](https://leiningen.org/) + [lein-exec](https://github.com/kumarshantanu/lein-exec), a Clojure task runner
-* [lichen](https://github.com/mcandre/lichen), a sed task runner
-* [Mage](https://magefile.org/), a task runner for Go projects
-* [mian](https://github.com/mcandre/mian), a task runner for (Chicken) Scheme Lisp
-* [npm](https://www.npmjs.com/), [Grunt](https://gruntjs.com/), Node.js task runners
-* [periscope](https://github.com/mcandre/periscope), a linter for unscoped NPM packages
-* [POSIX make](https://pubs.opengroup.org/onlinepubs/009695299/utilities/make.html), a task runner standard for C/C++ and various other software projects
-* [Rake](https://ruby.github.io/rake/), a task runner for Ruby projects
-* [Rebar3](https://www.rebar3.org/), a build system for Erlang projects
-* [rez](https://github.com/mcandre/rez) builds C/C++ projects
-* [sbt](https://www.scala-sbt.org/index.html), a build system for Scala projects
-* [Shake](https://shakebuild.com/), a task runner for Haskell projects
-* [ShellCheck](https://www.shellcheck.net/), a shell script linter with a rich collection of rules for promoting safer scripting
-* [slick](https://github.com/mcandre/slick), a linter to enforce stricter, unextended POSIX sh syntax compliance
-* [stank](https://github.com/mcandre/stank), a collection of POSIX-y shell script linters
-* [tinyrick](https://github.com/mcandre/tinyrick) for Rust projects
-* [yao](https://github.com/mcandre/yao), a task runner for Common LISP projects
+Prior art, personal plugs, and tools for developing software (including non-JS projects)!
+
+* Inspiration from [nobuild](https://github.com/tsoding/nobuild) - a convention for C/C++ build systems
+* [bashate](https://github.com/openstack/bashate) - shell script linter
+* [Gradle](https://gradle.org/) - JVM build system
+* [lake](https://luarocks.org/modules/steved/lake) - Lua task runner
+* [Leiningen](https://leiningen.org/) + [lein-exec](https://github.com/kumarshantanu/lein-exec) - Clojure task runner
+* [Mage](https://magefile.org/) - Go task runner
+* [mcandre/linters](https://github.com/mcandre/linters) - curated linter collection
+* [mcandre/tinyrick](https://github.com/mcandre/tinyrick) - Rust task runner
+* [npm](https://www.npmjs.com/), [Grunt](https://gruntjs.com/) - Node.js task runners
+* [POSIX make](https://pubs.opengroup.org/onlinepubs/009695299/utilities/make.html) - general purpose task runner
+* [Rake](https://ruby.github.io/rake/) - Ruby task runner
+* [Rebar3](https://www.rebar3.org/) - Erlang build system
+* [sbt](https://www.scala-sbt.org/index.html) - Scala build system
+* [Shake](https://shakebuild.com/) - Haskell task runner
 
 🍑
