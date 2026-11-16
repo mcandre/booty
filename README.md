@@ -1,6 +1,6 @@
 # booty: the biggest thing to happen to ECMAScript since Netscape
 
-[![license](https://img.shields.io/badge/license-BSD-3)](LICENSE.md)
+[![License](https://badgen.net/static/license/BSD/ab2b29)](LICENSE.md)
 
 # SUMMARY
 
